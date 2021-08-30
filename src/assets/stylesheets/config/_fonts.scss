@@ -1,0 +1,10 @@
+// Import google fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+// Font variables
+$body-font: 'Open Sans', sans-serif;
+
+// Body font
+body {
+  font-family: $body-font;
+}

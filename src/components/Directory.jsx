@@ -28,7 +28,7 @@ class Directory extends React.Component {
         linkUrl: ''
       },
       {
-        title: 'Jewelry',
+        title: 'Jewellery',
         imageUrl: 'https://picsum.photos/499/300',
         size: 'large',
         id: 4,

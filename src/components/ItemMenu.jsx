@@ -3,8 +3,8 @@ import { withRouter } from 'react-router';
 
 import '../assets/stylesheets/components/ItemMenu.scss';
 
-const ItemMenu = ({ title, imageUrl, history, linkUrl, match }) => (
-  <div className='item-menu' onClick={() => history.push(`${match.url}${linkUrl}`)}>
+const ItemMenu = ({ title, size, imageUrl, history, linkUrl, match }) => (
+  <div className={`${size} item-menu`} onClick={() => history.push(`${match.url}${linkUrl}`)}>
     <div
       className='background-image'
       style={{

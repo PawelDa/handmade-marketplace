@@ -11,6 +11,10 @@
   background-size: cover;
   overflow: hidden;
 
+  &.large {
+    height: 380px;
+  }
+
   &:hover {
     cursor: pointer;
   

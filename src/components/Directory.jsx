@@ -11,7 +11,7 @@ class Directory extends React.Component {
     this.state = {
       sections: [{
         title: 'Candles',
-        imageUrl: 'https://picsum.photos/500/300',
+        imageUrl: 'https://cdn.pixabay.com/photo/2017/08/10/22/34/candles-2628473_960_720.jpg',
         id: 1,
         linkUrl: 'candles'
       },

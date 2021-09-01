@@ -13,7 +13,7 @@ function App() {
         <Route exact path='/' component={HomePage}/>
         <Route path='/shop' component={ShopPage}/>
       </Switch>
-      <div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+      <div id='icon-link'>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </div>
   );
 }

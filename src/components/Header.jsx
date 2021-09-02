@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { auth } from '../firebase/config';
 
-import { ReactComponent as Logo } from '../assets/images/aromatic-candle.svg';
+import { ReactComponent as Logo } from '../assets/images/default-monochrome.svg';
 
 import '../assets/stylesheets/components/Header.scss';
 

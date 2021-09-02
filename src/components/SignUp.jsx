@@ -1,6 +1,6 @@
 import React from 'react';
-import { createUserProfileDocument } from '../firebase/config';
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { auth, createUserProfileDocument } from '../firebase/config';
+import { createUserWithEmailAndPassword } from "firebase/auth";
 
 import '../assets/stylesheets/components/SignUp.scss';
 
@@ -30,7 +30,6 @@ class SignUp extends React.Component {
     }
 
     try {
-      const auth = getAuth();
       const { user } = await createUserWithEmailAndPassword(auth, email, password);
 
       await createUserProfileDocument(user, { displayName });

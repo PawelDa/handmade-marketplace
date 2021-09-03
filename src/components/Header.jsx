@@ -10,7 +10,6 @@ import CartIcon from './CartIcon';
 import CartDropdown from './CartDropdown';
 
 import '../assets/stylesheets/components/Header.scss';
-import cartReducer from '../redux/reducers/cart';
 
 const Header = ({ currentUser, hidden }) => (
   <div className='header'>

@@ -16,7 +16,7 @@ const CollectionItem = ({id, name, price, imageUrl}) => (
       <span className='name'>{name}</span>
       <span className='price'>£{price}</span>
     </div>
-    <CustomButton inverted>Add to cart</CustomButton>
+    <CustomButton inverted><i className="fas fa-cart-plus fa-2x"></i></CustomButton>
   </div>
 )
 

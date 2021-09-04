@@ -12,6 +12,7 @@ import Header from './components/Header';
 import HomePage from './pages/HomePage';
 import ShopPage from './pages/ShopPage';
 import SignInAndSignUpPage from './pages/SignInAndSignUpPage';
+import CheckoutPage from './pages/CheckoutPage';
 
 class App extends React.Component {
   unsubscribeFromAuth = null;
@@ -44,8 +45,9 @@ class App extends React.Component {
       <div>
         <Header />
         <Switch>
-          <Route exact path='/' component={HomePage}/>
-          <Route path='/shop' component={ShopPage}/>
+          <Route exact path='/' component={HomePage} />
+          <Route path='/shop' component={ShopPage} />
+          <Route exact path='/checkout' component={CheckoutPage} />
           <Route 
             exact
             path='/signin'

@@ -1,6 +1,7 @@
 import {
   TOGGLE_CART_HIDDEN,
-  ADD_ITEM
+  ADD_ITEM,
+  CLEAR_ITEM_FROM_CART
 } from '../actions/types';
 import { addItemToCart } from '../utils/cart';
 
@@ -20,6 +21,14 @@ const cartReducer = (state = intialState, action) => {
       return {
         ...state,
         cartItems: addItemToCart(state.cartItems, action.payload)
+      };
+    case CLEAR_ITEM_FROM_CART:
+      return {
+        ...state,
+        // filter from cart items which id is diffrent that one that we want to delete
+        cartItems: state.cartItems.filter(
+          cartItem => cartItem.id !== action.payload.id
+        )
       };
     default:
       return state;

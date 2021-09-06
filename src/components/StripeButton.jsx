@@ -12,10 +12,9 @@ const StripeCheckoutButton = ({ price }) => {
   return (
     <StripeCheckout 
       label='Pay Now'
-      name='My company'
+      name='Handmade goods marketplace'
       billingAddress
       shippingAddress
-      image=''
       description={`Your total is £${price}`}
       amount={priceForStripe}
       panelLabel='Pay Now'

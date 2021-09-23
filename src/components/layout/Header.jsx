@@ -9,8 +9,8 @@ import { selectCurrentUser } from '../../redux/selectors/user';
 import { selectCartHidden } from '../../redux/selectors/cart';
 
 import { ReactComponent as Logo } from '../../assets/images/default-monochrome.svg';
-import CartIcon from '../CartIcon';
-import CartDropdown from '../CartDropdown';
+import CartIcon from '../cart/CartIcon';
+import CartDropdown from '../cart/CartDropdown';
 
 const Header = ({ currentUser, hidden }) => (
   <div className='header'>

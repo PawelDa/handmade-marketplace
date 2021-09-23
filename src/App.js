@@ -10,8 +10,8 @@ import { selectCurrentUser } from './redux/selectors/user';
 
 import Header from './components/layout/Header';
 import HomePage from './components/home-page/HomePage';
-import ShopPage from './pages/ShopPage';
-import SignInAndSignUpPage from './pages/SignInAndSignUpPage';
+import ShopPage from './components/shop-page/ShopPage';
+import SignInAndSignUpPage from './components/sign-in-page/SignInAndSignUpPage';
 import CheckoutPage from './pages/CheckoutPage';
 
 class App extends React.Component {

@@ -8,7 +8,7 @@ import { auth, createUserProfileDocument } from './firebase/config';
 import { setCurrentUser } from './redux/actions/user';
 import { selectCurrentUser } from './redux/selectors/user';
 
-import Header from './components/Header';
+import Header from './components/layout/Header';
 import HomePage from './components/home-page/HomePage';
 import ShopPage from './pages/ShopPage';
 import SignInAndSignUpPage from './pages/SignInAndSignUpPage';

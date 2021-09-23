@@ -6,7 +6,7 @@ import { withRouter } from 'react-router';
 import { selectCartItems } from '../../redux/selectors/cart';
 import { toggleCartHidden } from '../../redux/actions/cart'
 
-import CustomButton from '../CustomButton';
+import CustomButton from '../layout/CustomButton';
 import CartItem from './CartItem';
 
 const CartDropdown = ({ cartItems, history, dispatch }) => (

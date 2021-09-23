@@ -12,7 +12,7 @@ import Header from './components/layout/Header';
 import HomePage from './components/home-page/HomePage';
 import ShopPage from './components/shop-page/ShopPage';
 import SignInAndSignUpPage from './components/sign-in-page/SignInAndSignUpPage';
-import CheckoutPage from './pages/CheckoutPage';
+import CheckoutPage from './components/checkout-page/CheckoutPage';
 
 class App extends React.Component {
   unsubscribeFromAuth = null;

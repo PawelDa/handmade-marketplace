@@ -7,7 +7,7 @@ import { selectCartItems } from '../../redux/selectors/cart';
 import { toggleCartHidden } from '../../redux/actions/cart'
 
 import CustomButton from '../CustomButton';
-import CartItem from '../CartItem';
+import CartItem from './CartItem';
 
 const CartDropdown = ({ cartItems, history, dispatch }) => (
   <div className='cart-dropdown'>

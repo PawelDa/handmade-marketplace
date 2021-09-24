@@ -14,7 +14,6 @@ import {
   HeaderContainer,
   LogoContainer,
   OptionsContainer,
-  OptionDiv,
   OptionLink
 } from '../../assets/stylesheets/components/layout/Header';
 
@@ -28,9 +27,9 @@ const Header = ({ currentUser, hidden }) => (
         SHOP
       </OptionLink>
       {currentUser ?
-        <OptionDiv onClick={() => auth.signOut()}>
+        <OptionLink as='div' onClick={() => auth.signOut()}>
           <i className="fas fa-sign-out-alt fa-sm"></i>&nbsp;SIGN OUT
-        </OptionDiv>
+        </OptionLink>
         :
         <OptionLink to='/signin'>
           SIGN IN

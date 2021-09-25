@@ -37,9 +37,11 @@ const googleSignInStyles = css`
 const getButtonStyles = props => {
   if (props.isGoogleSignIn) {
     return googleSignInStyles;
+  } else if (props.inverted) {
+    return invertedButtonStyles;
+  } else {
+    return buttonStyles;
   }
-
-  return props.inverted ? invertedButtonStyles : buttonStyles;
 };
 
 export const CustomButtonContainter = styled.button`
@@ -51,7 +53,7 @@ export const CustomButtonContainter = styled.button`
   padding: 0 35px 0 35px;
   font-size: 15px;
   text-transform: uppercase;
-  font-family: 'Open Sans Condensed';
+  font-family: $body-font;
   font-weight: bolder;
   cursor: pointer;
   display: flex;
